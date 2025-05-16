@@ -5,6 +5,10 @@ import {
   FaReact,
   FaNodeJs,
   FaPhp,
+  FaTools,
+  FaUserShield,
+  FaLaptopCode,
+  FaUsers,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -38,6 +42,29 @@ export const SKILLS_DATA = [
       { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
       { name: "React.js", icon: FaReact, color: "text-blue-400" },
       { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-teal-500" },
+    ],
+  },
+  {
+    category: "Experienced Skills",
+    items: [
+      { name: "IT Support Assistant - Airport", icon: FaUserShield },
+      { name: "PC Building (Freelance)", icon: FaTools },
+      { name: "Hardware Troubleshooting", icon: FaLaptopCode },
+      { name: "Network Configuration", icon: FaLaptopCode },
+      { name: "Software Installation & Maintenance", icon: FaLaptopCode },
+      // add more specific experienced skills here
+    ],
+  },
+  {
+    category: "Soft Skills",
+    items: [
+      { name: "Communication", icon: FaUsers },
+      { name: "Problem Solving" },
+      { name: "Time Management" },
+      { name: "Teamwork" },
+      { name: "Adaptability" },
+      { name: "Attention to Detail" },
+      // add more soft skills here
     ],
   },
 ];

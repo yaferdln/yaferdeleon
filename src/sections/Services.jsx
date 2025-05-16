@@ -44,24 +44,26 @@ const Services = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {services.map((service, index) => (
-        <div
-          key={index}
-          className="bg-slate-800/20 rounded-md hover:bg-slate-800/40 hover:text-teal-400 p-6 flex flex-col items-center text-center transition-colors duration-300"
-        >
-          <div className="mb-4 text-4xl text-slate-300">
-            <service.icon />
+    <>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="bg-slate-800/20 rounded-md hover:bg-slate-800/40 hover:text-teal-400 p-6 flex flex-col items-center text-center transition-colors duration-300 hover:shadow-md"
+          >
+            <div className="mb-4 text-5xl text-slate-400">
+              <service.icon />
+            </div>
+            <h3 className="text-xl font-semibold tracking-wide mb-3 text-slate-300">
+              {service.title}
+            </h3>
+            <p className="text-md leading-relaxed w-full text-center text-slate-400">
+              {service.description}
+            </p>
           </div>
-          <h3 className="text-xl font-semibold tracking-wide mb-3">
-            {service.title}
-          </h3>
-          <p className="text-md leading-relaxed w-full text-center text-slate-400">
-            {service.description}
-          </p>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 

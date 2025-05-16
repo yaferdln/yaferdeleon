@@ -8,9 +8,7 @@ const Navbar = ({ activeSection }) => {
           <li
             key={link.title}
             className={`relative flex items-center gap-4 group py-2 ${
-              activeSection === link.href
-                ? "sticky top-0 bg-slate-950 z-10"
-                : ""
+              activeSection === link.href ? "sticky top-0 z-10" : ""
             }`}
           >
             <span

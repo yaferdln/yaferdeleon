@@ -1,61 +1,72 @@
 export const PROJECTS_DATA = [
   {
-    title: "My Portfolio Website",
+    title: "My Portfolio Website V1",
     description:
       "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
     image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
     demoLink: "https://yaferdev.vercel.app/",
   },
   {
-    title: "Portfolio UI",
+    title: "My Portfolio Website V1",
     description:
-      "A simple portfolio UI template built with using only HTML and CSS.",
+      "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
     image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
-    demoLink: "https://yaferdln.github.io/Profle-Card-UI/",
+    demoLink: "https://yaferdev.vercel.app/",
   },
   {
-    title: "Animated Image Gallery",
+    title: "My Portfolio Website V1",
     description:
-      "Basic Image gallery with hover effects and animations, built using HTML, CSS",
-    image: "/projects/yaferdln.github.io_Animated-Image-Gallery.png",
-    demoLink: "https://yaferdln.github.io/Animated-Image-Gallery/",
+      "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
+    image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
+    demoLink: "https://yaferdev.vercel.app/",
   },
   {
-    title: "Icon Neon Hover Effect",
+    title: "My Portfolio Website V1",
     description:
-      "Stunning neon hover effect for icons, built using HTML and CSS",
-    image: "/projects/yaferdln.github.io_Icon-Neon-Hover-Effect.png",
-    demoLink: "https://yaferdln.github.io/Icon-Neon-Hover-Effect/",
+      "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
+    image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
+    demoLink: "https://yaferdev.vercel.app/",
   },
   {
-    title: "Dice Roller",
-    description: "Simple dice roller using Javascript",
-    image: "/projects/diceroller.png",
-    demoLink: "https://yaferdln.github.io/Dice-Roller/",
-  },
-  {
-    title: "Quiz App",
-    description: "Quiz App using javascript",
-    image: "/projects/quizapp.png",
-    demoLink: "https://yaferdln.github.io/Quiz-App/",
-  },
-  {
-    title: "Number Guessing Game",
-    description: "Number guessing game using Javascript",
-    image: "/projects/numberguessinggame.png",
-    demoLink: "https://yaferdln.github.io/Number-Guessing-Game/",
-  },
-  {
-    title: "Lyric Sync Display",
+    title: "My Portfolio Website V1",
     description:
-      "Sync lyrics like spotify while playing a song using Javascript",
-    image: "/projects/lyricsync.png",
-    demoLink: "https://yaferdln.github.io/Lyrics-Sync-Display/",
+      "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
+    image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
+    demoLink: "https://yaferdev.vercel.app/",
   },
   {
-    title: "Live Digital Clock",
-    description: "Live digital clock with theme toggle using Javascript",
-    image: "/projects/digitalclock.png",
-    demoLink: "https://yaferdln.github.io/Digital-Clock/",
+    title: "My Portfolio Website V1",
+    description:
+      "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
+    image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
+    demoLink: "https://yaferdev.vercel.app/",
+  },
+  {
+    title: "My Portfolio Website V1",
+    description:
+      "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
+    image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
+    demoLink: "https://yaferdev.vercel.app/",
+  },
+  {
+    title: "My Portfolio Website V1",
+    description:
+      "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
+    image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
+    demoLink: "https://yaferdev.vercel.app/",
+  },
+  {
+    title: "My Portfolio Website V1",
+    description:
+      "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
+    image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
+    demoLink: "https://yaferdev.vercel.app/",
+  },
+  {
+    title: "My Portfolio Website V1",
+    description:
+      "My personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.",
+    image: "/projects/yaferdln.github.io_Profle-Card-UI.png",
+    demoLink: "https://yaferdev.vercel.app/",
   },
 ];
