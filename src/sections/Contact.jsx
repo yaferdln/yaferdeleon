@@ -87,7 +87,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 bg-slate-700 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
+              className="w-full px-4 py-2 bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
             />
           </div>
 
@@ -105,7 +105,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 bg-slate-700 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
+              className="w-full px-4 py-2 bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
             />
             <ValidationError
               prefix="Email"
@@ -129,7 +129,7 @@ const Contact = () => {
               onChange={handleChange}
               required
               rows="5"
-              className="w-full px-4 py-2 bg-slate-700 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
+              className="w-full px-4 py-2 bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
             />
             <ValidationError
               prefix="Message"
@@ -142,7 +142,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={state.submitting}
-            className={`w-full py-3 px-6 font-semibold bg-slate-700 hover:bg-teal-400 text-white rounded transition-colors duration-300 ${
+            className={`w-full py-3 px-6 font-semibold bg-slate-800 hover:bg-teal-400 text-white rounded transition-colors duration-300 ${
               state.submitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
