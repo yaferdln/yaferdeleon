@@ -7,7 +7,7 @@ const About = () => {
     <>
       {/* About text */}
       <p
-        className="text-slate-400 leading-relaxed"
+        className="text-slate-400 text-sm md:text-md leading-relaxed"
         dangerouslySetInnerHTML={{
           __html: aboutText.replace(/\n/g, "<br />"),
         }}
@@ -15,7 +15,7 @@ const About = () => {
 
       {/* Tech Stack Marquee with hover effects */}
       <div className="mt-8">
-        <h3 className="text-xl font-semibold text-slate-300 mb-2">
+        <h3 className="text-md md:text-lg font-semibold text-slate-300 mb-2">
           Tech Stack & Tools
         </h3>
         <Marquee
@@ -35,7 +35,7 @@ const About = () => {
                 title={title}
                 className="transition-all bg-slate-800/40 backdrop-blur-sm p-3 rounded-lg shadow-md hover:shadow-lg hover:bg-slate-800/60 hover:text-white hover:scale-125 transform hover:rotate-6 duration-300"
               >
-                <Icon className={`${color} text-4xl sm:text-5xl`} />
+                <Icon className={`${color} text-3xl md:text-5xl`} />
                 <span className="sr-only">{title}</span>
               </a>
             ))}

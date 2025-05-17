@@ -24,46 +24,46 @@ const Contact = () => {
     <>
       <div className="flex flex-col gap-8">
         {/* Contact Info */}
-        <div className="space-y-4">
-          <h3 className="text-2xl font-semibold tracking-wide text-slate-300">
+        <div className="space-y-4 text-center">
+          <h3 className="text-md md:text-lg font-semibold tracking-wide text-slate-300">
             Contact Information
           </h3>
-          <p className="text-md text-slate-400">
+          <p className="text-sm md:text-md text-slate-400">
             Feel free to reach out to me using the form below or through the
             contact details.
           </p>
           <div className="space-y-4 text-md">
             <p>
-              <span className="font-medium tracking-widest text-slate-400">
+              <span className="text-sm md:text-md font-medium tracking-widest text-slate-300">
                 Email:
               </span>{" "}
               <a
                 href="mailto:deleonyafer@gmail.com"
-                className="hover:underline text-slate-400"
+                className="hover:underline text-sm md:text-md text-slate-400"
               >
                 deleonyafer@gmail.com
               </a>
             </p>
             <p>
-              <span className="font-medium tracking-widest text-slate-400">
+              <span className="text-sm md:text-md font-medium tracking-widest text-slate-300">
                 Mobile:
               </span>{" "}
               <a
                 href="tel:+639128023499"
-                className="hover:underline text-slate-400"
+                className="hover:underline text-sm md:text-md text-slate-400"
               >
                 09128023499
               </a>
             </p>
             <p>
-              <span className="font-medium tracking-widest text-slate-400">
+              <span className="text-sm md:text-md font-medium tracking-widest text-slate-300">
                 LinkedIn:
               </span>{" "}
               <a
                 href="https://www.linkedin.com/in/yaferdln/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline text-slate-400"
+                className="hover:underline text-sm md:text-md text-slate-400"
               >
                 https://www.linkedin.com/in/yaferdln/
               </a>
@@ -74,10 +74,13 @@ const Contact = () => {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="w-full bg-slate-800/20 p-8 space-y-6 rounded"
+          className="w-full md:w-2/3 mx-auto p-8 space-y-6 rounded"
         >
           <div>
-            <label htmlFor="name" className="block text-md mb-2 text-slate-300">
+            <label
+              htmlFor="name"
+              className="block text-sm md:text-md mb-2 text-slate-300"
+            >
               Name
             </label>
             <input
@@ -87,14 +90,14 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
+              className="w-full px-4 py-2 text-sm md:text-md bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
             />
           </div>
 
           <div>
             <label
               htmlFor="email"
-              className="block text-md mb-2 text-slate-300"
+              className="block text-sm md:text-md mb-2 text-slate-300"
             >
               Email Address
             </label>
@@ -105,7 +108,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
+              className="w-full px-4 py-2 text-sm md:text-md bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
             />
             <ValidationError
               prefix="Email"
@@ -118,7 +121,7 @@ const Contact = () => {
           <div>
             <label
               htmlFor="message"
-              className="block text-md mb-2 text-slate-300"
+              className="block text-sm md:text-md mb-2 text-slate-300"
             >
               Message
             </label>
@@ -129,7 +132,7 @@ const Contact = () => {
               onChange={handleChange}
               required
               rows="5"
-              className="w-full px-4 py-2 bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
+              className="w-full px-4 py-2 text-sm md:text-md bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
             />
             <ValidationError
               prefix="Message"
@@ -142,7 +145,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={state.submitting}
-            className={`w-full py-3 px-6 font-semibold bg-slate-800 hover:bg-teal-400 text-white rounded transition-colors duration-300 ${
+            className={`w-full py-3 px-6 text-sm md:text-md font-semibold bg-slate-800 hover:bg-teal-400 text-white rounded transition-colors duration-300 ${
               state.submitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >

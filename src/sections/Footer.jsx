@@ -1,9 +1,9 @@
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-slate-900 text-slate-400 py-6 text-center text-sm">
-      <div className="container mx-auto px-4">
-        <p className="mb-2">
+    <footer className="text-slate-400 py-6 text-center text-xs md:text-sm">
+      <div className="container mx-auto px-4 md:max-w-3xl">
+        <p className="mb-4">
           Built with{" "}
           <a
             href="https://react.dev/"
@@ -24,12 +24,12 @@ const Footer = () => {
           </a>
           , deployed with{" "}
           <a
-            href="https://vercel.com/"
+            href="https://netlify.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline text-teal-400"
           >
-            Vercel
+            Netlify
           </a>
           . All text is set in the{" "}
           <a
@@ -42,7 +42,7 @@ const Footer = () => {
           </a>{" "}
           typeface.
         </p>
-        <p className="text-xs text-slate-500">
+        <p className="text-xs md:text-sm text-slate-500">
           &copy; {currentYear} YaferDev. All rights reserved.
         </p>
       </div>
