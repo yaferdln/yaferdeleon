@@ -2,7 +2,7 @@ import { navbarLinks } from "../constants/navbarLinks";
 
 const Navbar = ({ activeSection }) => {
   return (
-    <nav className="mt-4 mb-8 pl-1 border-slate-700 relative">
+    <nav className="mt-4 mb-8  pl-1 border-slate-700 relative">
       <ul className="flex flex-col space-y-4">
         {navbarLinks.map((link) => {
           const isActive = activeSection === link.href;
@@ -23,7 +23,7 @@ const Navbar = ({ activeSection }) => {
               />
               <a
                 href={`#${link.href}`}
-                className={`block uppercase tracking-wider transition-colors duration-200 ${
+                className={`block text-sm sm:text-base lg:text-base uppercase tracking-wider transition-colors duration-200 ${
                   isActive
                     ? "text-teal-300"
                     : "text-slate-400 hover:text-teal-300"

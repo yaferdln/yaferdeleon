@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ARCHIVED_PROJECTS_DATA } from "../constants/archivedProjectsData";
+
 const Archive = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-400 px-6 py-12">
@@ -15,7 +16,8 @@ const Archive = () => {
 
       <h1 className="text-3xl font-bold text-slate-200 mb-8">My Projects</h1>
 
-      <div className="overflow-x-auto">
+      {/* Desktop Table */}
+      <div className="hidden sm:block overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="border-b border-slate-700 text-slate-300">
@@ -57,6 +59,30 @@ const Archive = () => {
             ))}
           </tbody>
         </table>
+      </div>
+
+      {/* Mobile Layout */}
+      <div className="block sm:hidden space-y-6">
+        {ARCHIVED_PROJECTS_DATA.map((project) => (
+          <div
+            key={project.id}
+            className="border border-slate-800 rounded-lg p-4 bg-slate-800/50 hover:bg-slate-800 transition"
+            onClick={() => window.open(project.demoLink, "_blank")}
+          >
+            <div className="mb-2">
+              <span className="block text-xs text-slate-500 uppercase">
+                Project
+              </span>
+              <p className="text-teal-300 font-semibold">{project.title}</p>
+            </div>
+            <div>
+              <span className="block text-xs text-slate-500 uppercase">
+                Year
+              </span>
+              <p>{project.year}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

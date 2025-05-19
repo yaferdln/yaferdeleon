@@ -11,28 +11,30 @@ const Projects = () => {
           href={project.demoLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="group block rounded-md hover:bg-slate-800/40 transition-colors duration-300 hover:shadow-md"
+          className="group block rounded-md border-1 border-gray-400/20 hover:border-gray-400/40 bg-slate-800/20 hover:bg-slate-800/40 transition-colors duration-300 hover:shadow-md"
         >
-          <div className="p-6 flex gap-4">
+          <div className="p-6 sm:flex gap-4">
             {/* Image */}
-            <div className="hidden sm:block w-24 sm:w-32 shrink-0">
-              <LazyImage
-                src={project.image}
-                alt={project.title}
-                className="w-full h-20 sm:h-24 object-cover rounded-md border border-slate-700 group-hover:border-teal-400 transition-colors duration-300"
-              />
+            <div className="w-full mb-4 sm:mb-0 sm:w-32 shrink-0">
+              {project.image && (
+                <LazyImage
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-30 sm:h-24 object-cover rounded border border-slate-700 group-hover:border-teal-400 transition-colors duration-300"
+                />
+              )}
             </div>
 
             {/* Content */}
             <div className="flex flex-col flex-grow space-y-2 sm:space-y-4">
-              <h3 className="text-md md:text-lg font-semibold tracking-normal flex items-center gap-2 text-slate-300 group-hover:text-teal-400">
+              <h3 className="text-base md:text-lg font-semibold tracking-normal flex items-center gap-2 text-slate-300 group-hover:text-teal-400">
                 {project.title}
                 <FiArrowUpRight
                   size={16}
-                  className="transition-transform duration-300 transform group-hover:rotate-[45deg]"
+                  className="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 transform group-hover:rotate-[45deg]"
                 />
               </h3>
-              <p className="text-sm md:text-md text-slate-400">
+              <p className="text-sm md:text-base text-slate-400">
                 {project.description}
               </p>
               {project.techStack && project.techStack.length > 0 && (
@@ -51,16 +53,18 @@ const Projects = () => {
           </div>
         </a>
       ))}
-      <div className="mt-8 text-left">
-        <a
-          href="/archive"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-teal-300 text-xs md:text-sm hover:underline hover:text-teal-400 transition-colors duration-200"
-        >
-          View Full Project Archive
-        </a>
-      </div>
+      <a
+        href="/archive"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-1 group text-teal-300 text-base hover:underline hover:text-teal-400 transition-colors duration-200"
+      >
+        View Full Project Archive
+        <FiArrowUpRight
+          size={16}
+          className="transition-transform duration-300 transform group-hover:rotate-45"
+        />
+      </a>
     </div>
   );
 };

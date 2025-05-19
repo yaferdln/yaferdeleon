@@ -24,15 +24,15 @@ const App = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-400 selection:bg-teal-300 selection:text-slate-800 leading-relaxed">
+    <div className="min-h-screen bg-slate-900 text-gray-400 selection:bg-teal-300 selection:text-gray-800 leading-relaxed">
       <div className="flex flex-col lg:flex-row">
         {/* Sidebar/Header */}
         <header className="w-full lg:w-1/3 p-6 lg:p-12 lg:h-screen lg:sticky lg:top-0 self-start z-50 border-r border-slate-800">
           <div className="flex flex-col justify-between h-full">
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold uppercase tracking-tight text-slate-300 mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-gray-300 mb-2 md:mb-4">
                 Yafer De Leon
-              </h1>
+              </h2>
 
               <TypewriterEffect
                 words={[
@@ -45,8 +45,8 @@ const App = () => {
                 ]}
               />
 
-              <p className="text-sm md:text-md leading-normal mb-4">
-                I don't just build sites. I build experiences.
+              <p className="text-sm md:text-base leading-normal mb-2 mb:mb-4">
+                Building more than just websites — creating digital journeys.
               </p>
 
               {/* Navbar visible on large screens */}

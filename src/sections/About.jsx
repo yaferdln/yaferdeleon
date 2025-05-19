@@ -7,7 +7,7 @@ const About = () => {
     <>
       {/* About text */}
       <p
-        className="text-slate-400 text-sm md:text-md leading-relaxed"
+        className="text-sm md:text-lg text-gray-400 leading-relaxed"
         dangerouslySetInnerHTML={{
           __html: aboutText.replace(/\n/g, "<br />"),
         }}
@@ -15,11 +15,11 @@ const About = () => {
 
       {/* Tech Stack Marquee with hover effects */}
       <div className="mt-8">
-        <h3 className="text-md md:text-lg font-semibold text-slate-300 mb-2">
+        <h3 className="text-lg md:text-2xl font-semibold text-gray-300 mb-2">
           Tech Stack & Tools
         </h3>
         <Marquee
-          speed={40}
+          speed={50}
           pauseOnHover
           gradient={false}
           autoFill

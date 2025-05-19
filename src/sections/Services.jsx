@@ -6,15 +6,15 @@ const Services = () => {
         {SERVICES_DATA.map((service, index) => (
           <div
             key={index}
-            className="rounded-md hover:bg-slate-800/40 p-6 flex flex-col items-center text-center transition-colors duration-300 hover:shadow-md"
+            className="rounded-md bg-slate-800/20 hover:bg-slate-800/40  p-6 flex flex-col justify-start items-start transition-colors duration-300 border-1 border-gray-400/20 hover:border-gray-400/40"
           >
             <div className="mb-4 text-teal-400 ">
-              <service.icon size={34} />
+              <service.icon size={40} />
             </div>
-            <h3 className="text-md md:text-lg font-semibold tracking-wide mb-3 text-slate-300">
+            <h3 className="text-base md:text-lg font-semibold tracking-wide mb-3 text-slate-300">
               {service.title}
             </h3>
-            <p className="text-sm md:text-md leading-relaxed w-full text-center text-slate-400">
+            <p className="text-sm md:text-base leading-relaxed w-full text-slate-400">
               {service.description}
             </p>
           </div>
