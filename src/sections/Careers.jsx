@@ -30,17 +30,18 @@ const Careers = () => {
               <p className="text-sm md:text-base text-teal-300 font-medium mb-4">
                 {career.company}
               </p>
+
               <p className="text-sm md:text-base text-slate-400 mb-3">
                 {career.description}
               </p>
 
               {/* Date and Year */}
-              <div className="text-xs text-slate-400 mb-2">
-                <span className="text-xs md:text-sm font-mono">
+              <div className="text-sm text-slate-400 mb-2">
+                <span className="text-sm md:text-base font-mono">
                   {career.date}
                 </span>
                 {career.date && career.year && <span> &middot; </span>}
-                <span className="text-xs md:text-sm font-mono">
+                <span className="text-sm md:text-base font-mono">
                   {career.year}
                 </span>
               </div>
