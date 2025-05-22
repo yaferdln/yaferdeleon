@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState, useEffect } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { socialLinks } from "./constants/socialLinks";
@@ -8,6 +8,7 @@ import {
   Navbar,
   ObservedSection,
 } from "./components";
+
 const About = lazy(() => import("./sections/About"));
 const Careers = lazy(() => import("./sections/Careers"));
 const Services = lazy(() => import("./sections/Services"));
