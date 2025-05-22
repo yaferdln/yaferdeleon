@@ -1,3 +1,4 @@
+import { memo } from "react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
@@ -50,4 +51,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);

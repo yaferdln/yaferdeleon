@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { memo, useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
@@ -22,7 +22,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 px-4">
         {/* Sticky Section Title */}
         <div className="md:hidden w-full sticky top-0 z-30 bg-slate-900/10 backdrop-blur-sm py-2 mb-4">
           <h1 className="text-base sm:text-lg pl-4 font-semibold text-teal-300 uppercase tracking-wider">
@@ -30,7 +30,10 @@ const Contact = () => {
           </h1>
         </div>
         {/* Contact Info */}
-        <div className="space-y-4 text-left group rounded-md border-1 border-gray-400/20 hover:border-gray-400/40 bg-slate-800/20 hover:bg-slate-800/40 p-6 transition-colors duration-300 ">
+        <div
+          className="space-y-4 text-left group border-1 border-gray-400/10 hover:border-gray-400/20 bg-slate-900/10
+            /10 hover:bg-slate-900/20 p-6 transition-colors duration-300"
+        >
           <h3 className="text-base md:text-lg font-semibold tracking-wide text-slate-300">
             Contact Information
           </h3>
@@ -45,7 +48,7 @@ const Contact = () => {
               </span>{" "}
               <a
                 href="mailto:deleonyafer@gmail.com"
-                className="hover:underline text-slate-400"
+                className="underline underline-offset-4 text-slate-400"
               >
                 deleonyafer@gmail.com
               </a>
@@ -56,7 +59,7 @@ const Contact = () => {
               </span>{" "}
               <a
                 href="tel:+639128023499"
-                className="hover:underline text-slate-400"
+                className="underline underline-offset-4 text-slate-400"
               >
                 09128023499
               </a>
@@ -69,7 +72,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/yaferdln/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline text-slate-400"
+                className="underline underline-offset-4 text-slate-400"
               >
                 https://www.linkedin.com/in/yaferdln/
               </a>
@@ -80,7 +83,8 @@ const Contact = () => {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="w-full space-y-6 rounded group border-1 border-gray-400/20 hover:border-gray-400/40 bg-slate-800/20  p-6 transition-colors duration-300"
+          className="w-full space-y-6 group border-1 border-gray-400/10 hover:border-gray-400/20 bg-slate-900/10
+            /10 hover:bg-slate-900/20 p-6 transition-colors duration-300"
         >
           <div>
             <label
@@ -96,7 +100,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 text-sm md:text-base bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
+              className="w-full px-4 py-2 text-sm md:text-base bg-slate-900 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400"
             />
           </div>
 
@@ -114,7 +118,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 text-sm md:text-base bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
+              className="w-full px-4 py-2 text-sm md:text-base bg-slate-900 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 "
             />
             <ValidationError
               prefix="Email"
@@ -138,7 +142,7 @@ const Contact = () => {
               onChange={handleChange}
               required
               rows="5"
-              className="w-full px-4 py-2 text-sm md:text-base bg-slate-800 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 rounded"
+              className="w-full px-4 py-2 text-sm md:text-base bg-slate-900 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 "
             />
             <ValidationError
               prefix="Message"
@@ -151,7 +155,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={state.submitting}
-            className={`w-full py-3 px-6 text-sm md:text-base font-semibold bg-slate-800 hover:bg-teal-400 text-white rounded transition-colors duration-300 ${
+            className={`w-full py-3 px-6 text-sm md:text-base font-semibold bg-slate-900 hover:bg-teal-400/70 text-white transition-colors duration-300 ${
               state.submitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
@@ -169,4 +173,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default memo(Contact);

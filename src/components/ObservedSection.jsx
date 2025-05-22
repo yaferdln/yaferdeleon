@@ -1,5 +1,5 @@
 import { useInView } from "framer-motion";
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 const ObservedSection = ({ id, setActiveSection, children }) => {
   const ref = useRef(null);
@@ -19,4 +19,4 @@ const ObservedSection = ({ id, setActiveSection, children }) => {
   );
 };
 
-export default ObservedSection;
+export default React.memo(ObservedSection);
