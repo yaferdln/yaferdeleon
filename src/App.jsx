@@ -18,6 +18,14 @@ const Contact = lazy(() => import("./sections/Contact"));
 const Footer = lazy(() => import("./sections/Footer"));
 
 const App = () => {
+  const sectionTitles = {
+    about: "About",
+    careers: "Careers",
+    services: "Services",
+    projects: "Projects",
+    skills: "Skills",
+    contact: "Contact",
+  };
   const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
@@ -64,10 +72,17 @@ const App = () => {
             </div>
           </div>
         </header>
-
+        {/* Mobile Sticky Section Label
+        <div className="lg:hidden fixed top-0 left-0 w-full z-50">
+          <div className="bg-slate-900 px-4 py-2 border-b border-slate-700 shadow-sm">
+            <h2 className="text-teal-300 text-sm font-medium tracking-wide">
+              {sectionTitles[activeSection]}
+            </h2>
+          </div>
+        </div> */}
         {/* Main Content Area */}
 
-        <main className="flex-1 overflow-y-auto scroll-smooth">
+        <main className="flex-1 md:overflow-y-auto scroll-smooth">
           <Suspense
             fallback={
               <div className="p-4 text-center text-teal-300">Loading...</div>

@@ -13,12 +13,7 @@ const ObservedSection = ({ id, setActiveSection, children }) => {
   }, [isInView, id, setActiveSection]);
 
   return (
-    <section
-      id={id}
-      ref={ref}
-      className="min-h-screen pt-16 px-4"
-      // Removed debug border styles, add conditionally during dev if needed
-    >
+    <section id={id} ref={ref} className="min-h-screen pt-16">
       {children}
     </section>
   );

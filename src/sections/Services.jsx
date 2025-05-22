@@ -3,6 +3,12 @@ const Services = () => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Sticky Section Title */}
+        <div className="md:hidden w-full sticky top-0 z-30 bg-slate-900/10 backdrop-blur-sm py-2 mb-4">
+          <h1 className="text-base sm:text-lg pl-4 font-semibold text-teal-300 uppercase tracking-wider">
+            Services
+          </h1>
+        </div>
         {SERVICES_DATA.map((service, index) => (
           <div
             key={index}
