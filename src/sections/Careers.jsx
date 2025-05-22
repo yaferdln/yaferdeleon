@@ -8,7 +8,7 @@ const Careers = () => {
       {CAREERS_DATA.map((career) => (
         <div
           key={career.id}
-          className="group rounded-md border-1 border-gray-400/20 hover:border-gray-400/40 bg-slate-800/20 hover:bg-slate-800/40 p-6 transition-colors duration-300"
+          className="group rounded-md border-1 border-gray-400/20 hover:border-gray-400/40 bg-slate-800/20  hover:bg-slate-800/40 p-6 transition-colors duration-300"
         >
           <div className="flex-col sm:flex-row flex gap-1 sm:gap-3">
             {/* Image */}
@@ -36,7 +36,7 @@ const Careers = () => {
               </p>
 
               {/* Date and Year */}
-              <div className="text-sm text-slate-400 mb-2">
+              <div className="text-sm text-slate-300 mb-4">
                 <span className="text-sm md:text-base font-mono">
                   {career.date}
                 </span>
@@ -52,7 +52,7 @@ const Careers = () => {
                   {career.techStack.map((tech, i) => (
                     <span
                       key={i}
-                      className="inline-block bg-slate-800 text-teal-300 hover:underline rounded-full px-3 py-1 text-xs md:text-sm font-mono"
+                      className="inline-block bg-slate-800 text-teal-300 rounded-full px-3 py-1 text-xs md:text-sm font-mono"
                     >
                       {tech}
                     </span>
