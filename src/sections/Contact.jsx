@@ -25,7 +25,7 @@ const Contact = () => {
       <div className="flex flex-col gap-8 px-4">
         {/* Sticky Section Title */}
         <div className="md:hidden w-full sticky top-0 z-30 bg-slate-900/10 backdrop-blur-sm py-2 mb-4">
-          <h1 className="text-base sm:text-lg pl-4 font-semibold text-teal-300 uppercase tracking-wider">
+          <h1 className="text-sm sm:text-base pl-4 font-semibold text-teal-300 uppercase tracking-wider">
             Contact
           </h1>
         </div>
@@ -34,14 +34,14 @@ const Contact = () => {
           className="space-y-4 text-left group border-1 border-gray-400/10 hover:border-gray-400/20 bg-slate-900/10
             /10 hover:bg-slate-900/20 p-6 transition-colors duration-300"
         >
-          <h3 className="text-base md:text-lg font-semibold tracking-wide text-slate-300">
+          <h3 className="text-sm md:text-base font-semibold tracking-wide text-slate-300">
             Contact Information
           </h3>
-          <p className="text-sm md:text-base text-slate-400">
+          <p className="text-xs md:text-sm text-slate-400">
             Feel free to reach out to me using the form below or through the
             contact details.
           </p>
-          <div className="space-y-4 text-sm md:text-base">
+          <div className="space-y-4 text-xs md:text-sm">
             <p>
               <span className="font-medium tracking-widest text-slate-300">
                 Email:
@@ -89,7 +89,7 @@ const Contact = () => {
           <div>
             <label
               htmlFor="name"
-              className="block text-sm md:text-base mb-2 text-slate-300"
+              className="block text-xs md:text-sm mb-2 text-slate-300"
             >
               Name
             </label>
@@ -100,14 +100,14 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 text-sm md:text-base bg-slate-900 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400"
+              className="w-full px-4 py-2 text-xs md:text-sm bg-slate-900 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400"
             />
           </div>
 
           <div>
             <label
               htmlFor="email"
-              className="block text-sm md:text-base mb-2 text-slate-300"
+              className="block text-xs md:text-sm mb-2 text-slate-300"
             >
               Email Address
             </label>
@@ -118,20 +118,20 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 text-sm md:text-base bg-slate-900 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 "
+              className="w-full px-4 py-2 text-xs md:text-sm bg-slate-900 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 "
             />
             <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
-              className="text-red-500 text-sm mt-1"
+              className="text-red-500 text-xs mt-1"
             />
           </div>
 
           <div>
             <label
               htmlFor="message"
-              className="block text-sm md:text-base mb-2 text-slate-300"
+              className="block text-xs md:text-sm mb-2 text-slate-300"
             >
               Message
             </label>
@@ -142,20 +142,20 @@ const Contact = () => {
               onChange={handleChange}
               required
               rows="5"
-              className="w-full px-4 py-2 text-sm md:text-base bg-slate-900 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 "
+              className="w-full px-4 py-2 text-xs md:text-sm bg-slate-900 text-slate-300 focus:outline-none focus:ring-1 focus:ring-teal-400 "
             />
             <ValidationError
               prefix="Message"
               field="message"
               errors={state.errors}
-              className="text-red-500 text-sm mt-1"
+              className="text-red-500 text-xs mt-1"
             />
           </div>
 
           <button
             type="submit"
             disabled={state.submitting}
-            className={`w-full py-3 px-6 text-sm md:text-base font-semibold bg-slate-900 hover:bg-teal-400/70 text-white transition-colors duration-300 ${
+            className={`w-full py-3 px-6 text-xs md:text-sm font-semibold bg-slate-900 hover:bg-teal-400/70 text-white transition-colors duration-300 ${
               state.submitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >

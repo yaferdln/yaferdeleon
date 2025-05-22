@@ -7,9 +7,9 @@ const Projects = () => {
   const projects = useMemo(() => PROJECTS_DATA, []);
 
   return (
-    <div className="grid grid-cols-1 gap-4 px-4">
+    <div className="grid grid-cols-1 gap-2 px-4">
       <div className="md:hidden w-full sticky top-0 z-30 bg-slate-900/10 backdrop-blur-sm py-2 mb-4">
-        <h1 className="text-base sm:text-lg pl-4 font-semibold text-teal-300 uppercase tracking-wider">
+        <h1 className="text-sm sm:text-base pl-4 font-semibold text-teal-300 uppercase tracking-wider">
           Projects
         </h1>
       </div>
@@ -22,7 +22,7 @@ const Projects = () => {
           rel="noopener noreferrer"
           className="group block border-1 border-gray-400/10 hover:border-gray-400/20 bg-slate-900/10 p-6 transition-colors duration-300"
         >
-          <div className="p-6 sm:flex gap-4">
+          <div className="p-0 sm:flex gap-2">
             <div className="w-full mb-4 sm:mb-0 sm:w-32 shrink-0">
               {project.image && (
                 <LazyImage
@@ -32,15 +32,15 @@ const Projects = () => {
                 />
               )}
             </div>
-            <div className="flex flex-col flex-grow space-y-2 sm:space-y-4">
-              <h3 className="text-base md:text-lg font-semibold tracking-normal flex items-center gap-2 text-slate-300 group-hover:text-teal-400">
+            <div className="flex flex-col flex-grow space-y-2">
+              <h3 className="text-sm md:text-base font-semibold tracking-normal flex items-center gap-2 text-slate-300 group-hover:text-teal-400">
                 {project.title}
                 <FiArrowUpRight
                   size={16}
                   className="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 transform group-hover:rotate-[45deg]"
                 />
               </h3>
-              <p className="text-sm md:text-base text-slate-400">
+              <p className="text-xs md:text-sm text-slate-400">
                 {project.description}
               </p>
               {project.techStack?.length > 0 && (
@@ -63,7 +63,7 @@ const Projects = () => {
         href="/archive"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 group text-teal-300 text-base hover:underline hover:text-teal-400 transition-colors duration-200"
+        className="inline-flex items-center gap-1 group text-teal-300 text-xs md:text-sm hover:underline hover:underline-offset-4 hover:text-teal-400 transition-colors duration-200"
       >
         View Full Project Archive
         <FiArrowUpRight

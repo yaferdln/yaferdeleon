@@ -9,7 +9,7 @@ const SocialLink = ({ social }) => {
       aria-label={social.name}
       className="text-slate-400 hover:text-teal-300 hover:scale-110 transition-transform duration-300"
     >
-      <Icon className="w-7 md:w-7 h-9 md:h-9" />
+      <Icon className="w-6 h-6" />
     </a>
   );
 };

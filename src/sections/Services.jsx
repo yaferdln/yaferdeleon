@@ -4,10 +4,10 @@ const Services = () => {
   const services = useMemo(() => SERVICES_DATA, []);
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 px-4">
         {/* Sticky Section Title */}
         <div className="md:hidden w-full sticky top-0 z-30 bg-slate-900/10 backdrop-blur-sm py-2 mb-4">
-          <h1 className="text-base sm:text-lg pl-4 font-semibold text-teal-300 uppercase tracking-wider">
+          <h1 className="text-sm sm:text-base pl-4 font-semibold text-teal-300 uppercase tracking-wider">
             Services
           </h1>
         </div>
@@ -20,10 +20,10 @@ const Services = () => {
             <div className="mb-4 text-teal-400 ">
               <service.icon size={40} />
             </div>
-            <h3 className="text-base md:text-lg font-semibold tracking-wide mb-3 text-slate-300">
+            <h3 className="text-sm md:text-base font-semibold tracking-wide mb-3 text-slate-300">
               {service.title}
             </h3>
-            <p className="text-sm md:text-base leading-relaxed w-full text-slate-400">
+            <p className="text-xs md:text-sm leading-relaxed w-full text-slate-400">
               {service.description}
             </p>
           </div>

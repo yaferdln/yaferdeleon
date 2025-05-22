@@ -5,9 +5,9 @@ const Skills = () => {
   const skills = useMemo(() => SKILLS_DATA, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 px-4">
       <div className="md:hidden w-full sticky top-0 z-30 bg-slate-900/10 backdrop-blur-sm py-2 mb-4">
-        <h1 className="text-base sm:text-lg pl-4 font-semibold text-teal-300 uppercase tracking-wider">
+        <h1 className="text-sm sm:text-base pl-4 font-semibold text-teal-300 uppercase tracking-wider">
           Skills
         </h1>
       </div>
@@ -17,16 +17,16 @@ const Skills = () => {
           key={index}
           className="group border-1 border-gray-400/10 hover:border-gray-400/20 bg-slate-900/10 p-6 transition-colors duration-300"
         >
-          <h3 className="text-base md:text-lg font-semibold mb-6 text-center tracking-wide text-slate-300">
+          <h3 className="text-sm md:text-base font-semibold mb-6 text-left tracking-wide text-slate-300">
             {skill.category}
           </h3>
-          <div className="flex flex-wrap gap-3 justify-center">
+          <div className="flex flex-wrap gap-4 justify-start">
             {skill.items.map((item, idx) => (
               <span
                 key={idx}
-                className="inline-flex items-center bg-slate-900 px-4 py-2 mb-3 text-xs md:text-sm text-slate-400 hover:bg-teal-400 hover:text-slate-900 transition-colors duration-300"
+                className="inline-flex items-start bg-slate-900 px-3 py-1 text-xs text-slate-400 hover:bg-teal-400 hover:text-slate-900 transition-colors duration-300"
               >
-                {item.icon && <item.icon className="mr-2 text-lg" />}
+                {item.icon && <item.icon className="mr-1 text-lg" />}
                 {item.name}
               </span>
             ))}
