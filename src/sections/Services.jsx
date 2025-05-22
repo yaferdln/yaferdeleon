@@ -18,7 +18,7 @@ const Services = () => {
             /10 hover:bg-slate-900/20 p-6 transition-colors duration-300"
           >
             <div className="mb-4 text-teal-400 ">
-              <service.icon size={40} />
+              <service.icon size={34} />
             </div>
             <h3 className="text-sm md:text-base font-semibold tracking-wide mb-3 text-slate-300">
               {service.title}
