@@ -31,25 +31,25 @@ const Careers = () => {
                 </div>
               )}
               <div className="flex-1">
-                <h3 className="text-sm md:text-base font-semibold text-slate-200">
+                <h3 className="text-base md:text-lg font-semibold text-slate-200">
                   {career.position}
                 </h3>
-                <p className="text-xs md:text-sm text-teal-300 font-medium">
+                <p className="text-sm md:text-base text-teal-300 font-medium">
                   {career.company}
                 </p>
               </div>
             </div>
 
-            <p className="text-xs md:text-sm text-slate-400">
+            <p className="text-sm md:text-base text-slate-400">
               {career.description}
             </p>
 
-            <div className="text-xs md:text-sm text-slate-300">
-              <span className="text-xs md:text-sm font-mono">
+            <div className="text-sm md:text-base text-slate-300">
+              <span className="text-sm md:text-base font-mono">
                 {career.date}
               </span>
               {career.date && career.year && <span> &middot; </span>}
-              <span className="text-xs md:text-sm font-mono">
+              <span className="text-sm md:text-base font-mono">
                 {career.year}
               </span>
             </div>
@@ -73,7 +73,7 @@ const Careers = () => {
         href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 text-xs md:text-sm group text-teal-300 hover:underline hover:underline-offset-4 hover:text-teal-400 transition-colors duration-200"
+        className="inline-flex items-center gap-1 text-sm md:text-base group text-teal-300 hover:underline hover:underline-offset-4 hover:text-teal-400 transition-colors duration-200"
       >
         View Full Resume
         <FiArrowUpRight

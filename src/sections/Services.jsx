@@ -20,10 +20,10 @@ const Services = () => {
             <div className="mb-4 text-teal-400 ">
               <service.icon size={34} />
             </div>
-            <h3 className="text-sm md:text-base font-semibold tracking-wide mb-3 text-slate-300">
+            <h3 className="text-base md:text-lg font-semibold tracking-wide mb-3 text-slate-300">
               {service.title}
             </h3>
-            <p className="text-xs md:text-sm leading-relaxed w-full text-slate-400">
+            <p className="text-sm md:text-base leading-relaxed w-full text-slate-400">
               {service.description}
             </p>
           </div>

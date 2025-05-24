@@ -14,7 +14,7 @@ const About = () => {
       <div className="px-4">
         {/* About text */}
         <p
-          className="text-xs md:text-base text-gray-400 leading-relaxed"
+          className="text-sm md:text-base text-gray-400 leading-relaxed"
           dangerouslySetInnerHTML={{
             __html: aboutText.replace(/\n/g, "<br />"),
           }}
@@ -40,7 +40,7 @@ const About = () => {
                   rel="noopener noreferrer"
                   title={title}
                 >
-                  <Icon className={`${color} text-3xl md:text-5xl`} />
+                  <Icon className={`${color} text-4xl md:text-6xl`} />
                   <span className="sr-only">{title}</span>
                 </a>
               ))}

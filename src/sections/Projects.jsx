@@ -33,14 +33,14 @@ const Projects = () => {
               )}
             </div>
             <div className="flex flex-col flex-grow space-y-2">
-              <h3 className="text-sm md:text-base font-semibold tracking-normal flex items-center gap-2 text-slate-300 group-hover:text-teal-400">
+              <h3 className="text-base md:text-lg font-semibold tracking-normal flex items-center gap-2 text-slate-300 group-hover:text-teal-400">
                 {project.title}
                 <FiArrowUpRight
                   size={16}
                   className="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 transform group-hover:rotate-[45deg]"
                 />
               </h3>
-              <p className="text-xs md:text-sm text-slate-400">
+              <p className="text-sm md:text-base text-slate-400">
                 {project.description}
               </p>
               {project.techStack?.length > 0 && (
@@ -48,7 +48,7 @@ const Projects = () => {
                   {project.techStack.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="inline-block bg-slate-900 text-teal-300 px-3 py-1 text-xs md:text-sm font-mono"
+                      className="inline-block bg-slate-900 text-teal-300 px-3 py-1 text-sm md:text-base font-mono"
                     >
                       {tech}
                     </span>
@@ -63,7 +63,7 @@ const Projects = () => {
         href="/archive"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 group text-teal-300 text-xs md:text-sm hover:underline hover:underline-offset-4 hover:text-teal-400 transition-colors duration-200"
+        className="inline-flex items-center gap-1 group text-teal-300 text-sm md:text-base hover:underline hover:underline-offset-4 hover:text-teal-400 transition-colors duration-200"
       >
         View Full Project Archive
         <FiArrowUpRight
