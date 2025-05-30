@@ -15,7 +15,7 @@ export const PROJECTS_DATA = [
       "A more refined and professional second version of my portfolio, inspired by Brittany Chiang’s design. This version includes animated sections, an interactive career timeline, and a cleaner, more accessible layout—built to reflect my growth and personal branding as a developer.",
     image: "/projects/portfoliov2.webp",
     demoLink: "https://yaferdeleon.netlify.app/",
-    techStack: ["React", "Tailwind CSS", "Formspree", "Vercel"],
+    techStack: ["React", "Tailwind CSS", "Formspark", "Netlify"],
   },
   {
     id: 3,
