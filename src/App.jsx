@@ -36,12 +36,7 @@ const App = () => {
               <div className="flex flex-col lg:flex-row">
                 {/* Sidebar/Header */}
                 <header className="w-full lg:w-1/3 p-6 lg:p-12 lg:h-screen lg:sticky lg:top-0 self-start z-50 border-r border-slate-800">
-                  {/*
-                    Ang container na ito ang magiging flex-col at magju-justify-between
-                    sa tatlong pangunahing seksyon ng header.
-                  */}
-                  <div className="flex flex-col justify-between h-full">
-                    {/* Unang Seksyon: Personal Info */}
+                  <div className="flex flex-col justify-around h-full">
                     <div>
                       <h2 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-gray-300 mb-2 md:mb-4">
                         Yafer De Leon
@@ -54,17 +49,9 @@ const App = () => {
                         journeys.
                       </p>
                     </div>
-
-                    {/* Ikalawang Seksyon: Navbar (Inilabas na sa sarili nitong div) */}
-                    {/*
-                      Ang 'hidden lg:block' ay nagpapanatili ng responsiveness:
-                      nakatago sa mobile, visible sa large screens.
-                    */}
                     <div className="hidden lg:block">
                       <Navbar activeSection={activeSection} />
                     </div>
-
-                    {/* Ikatlong Seksyon: Social Links */}
                     <div className="flex space-x-6">
                       {socialLinks.map((social, index) => (
                         <SocialLink key={index} social={social} />
