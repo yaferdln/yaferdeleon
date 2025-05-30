@@ -3,6 +3,5 @@ export const navbarLinks = [
   { title: "Careers", href: "careers" },
   { title: "Services", href: "services" },
   { title: "Projects", href: "projects" },
-  { title: "Skills", href: "skills" },
   { title: "Contact", href: "contact" },
 ];

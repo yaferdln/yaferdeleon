@@ -1,5 +1,10 @@
-export const aboutText = `Hello, I'm Yafer — a passionate Web Developer with a background in IT Support and entrepreneurship. I worked as an IT Support Assistant at <span class="text-slate-300 font-semibold">Manila International Airport Authority</span> for two years, where I developed strong technical skills and a problem-solving mindset. My experience in business and cryptocurrency also helped me become more adaptable and user-focused.
-
-I'm currently focused on <span class="text-slate-300 font-semibold">Front-End development</span>, building clean and modern interfaces using HTML, CSS, JavaScript, React.js, Tailwind CSS, and Bootstrap. To become a more well-rounded developer, I'm also learning Back-End tools like Node.js, Express.js, and MySQL. I believe that having both front and back-end skills allows me to create more complete and impactful solutions.
-
-This is an exciting chapter in my career, and I'm eager to apply what I’ve learned to real-world projects. With a strong work ethic and clear goals, I’m looking forward to contributing to meaningful digital experiences and growing through collaboration. Let’s build something exceptional together!`;
+// constants/aboutText.js
+export const aboutText = `
+  <p>Hi, I’m Yafer — a Web Developer with a background in IT Support and a strong entrepreneurial mindset. I began my career as an IT Support Assistant at the Manila International Airport Authority, where I developed a solid foundation in technical troubleshooting and problem-solving. This experience sharpened my ability to think critically, work under pressure, and deliver effective solutions.</p>
+  <br>
+  <p>My involvement in business and cryptocurrency has also helped me become more adaptive, resourceful, and user-centered — qualities that now drive my approach to software development. I currently focus on Front-End development, building responsive and modern interfaces using HTML, CSS, JavaScript, React.js, and Tailwind CSS.</p>
+  <br>
+  <p>To become a more versatile developer, I’m expanding my skills in Back-End technologies like Node.js, Express.js, and MySQL. This full-stack knowledge enables me to build complete and scalable web applications.</p>
+  <br>
+  <p>I’m driven by a desire to create meaningful digital experiences and continuously grow through hands-on learning and collaboration. Whether working independently or in a team, I bring focus, discipline, and a strong commitment to delivering quality results. Let’s connect and create impactful solutions together.</p>
+`;

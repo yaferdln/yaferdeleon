@@ -8,6 +8,12 @@ export const CAREERS_DATA = [
     image: "/lserv.webp",
     date: "Dec 2018",
     year: "2021",
-    techStack: ["Hawrdware", "Software", "Networking"],
+    techStack: [
+      "Hardware & Software",
+      "Networking",
+      "Remote",
+      "Troubleshoot",
+      "Help Desk",
+    ],
   },
 ];
