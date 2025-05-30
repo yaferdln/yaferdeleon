@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <>
       <div className="md:hidden sticky top-0 z-30 w-full bg-slate-900/60 backdrop-blur-md">
-        <h1 className="text-sm sm:text-base py-3 px-4 font-bold text-teal-300 uppercase tracking-wider">
+        <h1 className="text-sm sm:text-base py-3 px-6 font-bold text-teal-300 uppercase tracking-wider mb-6">
           Services
         </h1>
       </div>

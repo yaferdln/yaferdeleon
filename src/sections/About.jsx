@@ -8,7 +8,7 @@ const About = () => {
     <>
       {/* Sticky Mobile Header */}
       <div className="md:hidden sticky top-0 z-30 w-full bg-slate-900/60 backdrop-blur-md">
-        <h1 className="text-sm sm:text-base py-3 px-4 font-bold text-teal-300 uppercase tracking-wider">
+        <h1 className="text-sm sm:text-base py-3 px-6 font-bold text-teal-300 uppercase tracking-wider mb-6">
           About
         </h1>
       </div>
@@ -17,7 +17,7 @@ const About = () => {
       <section className="px-4 max-w-5xl mx-auto">
         {/* About Text */}
         <div
-          className="text-sm md:text-base text-gray-400 leading-relaxed"
+          className="text-sm md:text-base text-gray-400 leading-relaxed mb-4"
           dangerouslySetInnerHTML={{ __html: aboutText }}
         />
 
