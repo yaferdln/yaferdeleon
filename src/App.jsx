@@ -36,7 +36,7 @@ const App = () => {
               <div className="flex flex-col lg:flex-row">
                 {/* Sidebar/Header */}
                 <header className="w-full lg:w-1/3 p-6 lg:p-12 lg:h-screen lg:sticky lg:top-0 self-start z-50 border-r border-slate-800">
-                  <div className="flex flex-col justify-around h-full">
+                  <div className="flex flex-col justify-between h-full">
                     <div>
                       <h2 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-gray-300 mb-2 md:mb-4">
                         Yafer De Leon
@@ -48,11 +48,12 @@ const App = () => {
                         Building more than just websites — creating digital
                         journeys.
                       </p>
+                      <div className="hidden lg:block mt-8">
+                        <Navbar activeSection={activeSection} />
+                      </div>
                     </div>
-                    <div className="hidden lg:block">
-                      <Navbar activeSection={activeSection} />
-                    </div>
-                    <div className="flex space-x-6 mt-2">
+
+                    <div className="flex space-x-4 md:space-x-6 mt-2">
                       {socialLinks.map((social, index) => (
                         <SocialLink key={index} social={social} />
                       ))}
