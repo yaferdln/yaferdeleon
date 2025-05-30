@@ -52,7 +52,7 @@ const App = () => {
                     <div className="hidden lg:block">
                       <Navbar activeSection={activeSection} />
                     </div>
-                    <div className="flex space-x-6">
+                    <div className="flex space-x-6 mt-2">
                       {socialLinks.map((social, index) => (
                         <SocialLink key={index} social={social} />
                       ))}
