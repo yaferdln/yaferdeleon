@@ -17,10 +17,6 @@ const App = () => {
     setActiveSection(id);
   }, []);
 
-  useEffect(() => {
-    AOS.init({ once: true });
-  }, []);
-
   return (
     <Routes>
       <Route
