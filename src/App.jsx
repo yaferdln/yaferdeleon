@@ -22,13 +22,13 @@ const App = () => {
       <Route
         path="/"
         element={
-          <div className="min-h-screen bg-slate-900 text-gray-400 selection:bg-teal-300 selection:text-gray-900 leading-relaxed">
+          <div className="min-h-screen bg-slate-900 text-slate-400 selection:bg-teal-300 selection:text-gray-900 leading-relaxed">
             <div className="flex flex-col lg:flex-row">
               {/* Sidebar/Header */}
               <header className="w-full lg:w-1/3 p-6 lg:p-12 lg:h-screen lg:sticky lg:top-0 self-start z-50 border-r border-slate-800">
                 <div className="flex flex-col justify-between h-full">
                   <div>
-                    <h2 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-gray-300 mb-2 md:mb-4">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-slate-300 mb-2 md:mb-4">
                       Yafer De Leon
                     </h2>
                     <h3 className="text-lg md:text-2xl font-semibold text-slate-400 mb-2">

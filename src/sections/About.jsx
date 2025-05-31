@@ -17,7 +17,7 @@ const About = () => {
       <section className="px-4 max-w-5xl mx-auto">
         {/* About Text */}
         <div
-          className="text-sm md:text-base text-gray-400 leading-relaxed"
+          className="text-sm md:text-base text-slate-400 leading-relaxed"
           dangerouslySetInnerHTML={{ __html: aboutText }}
         />
 
