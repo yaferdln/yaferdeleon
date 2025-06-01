@@ -2,20 +2,16 @@ import { navbarLinks } from "../constants/navbarLinks";
 import { memo } from "react";
 const Navbar = ({ activeSection }) => {
   return (
-    <nav className="relative">
+    <nav className="relative" role="navigation">
       <ul className="flex flex-col space-y-4">
         {navbarLinks.map((link) => {
           const isActive = activeSection === link.href;
 
           return (
-            <li
-              key={link.title}
-              className={`relative flex items-center py-1 ${
-                isActive ? "sticky top-0 z-10" : ""
-              }`}
-            >
+            <li key={link.title} className="relative flex items-center py-1">
               <a
                 href={`#${link.href}`}
+                aria-current={isActive ? "true" : undefined}
                 className={`relative inline-flex items-center gap-2 text-sm sm:text-base lg:text-base uppercase tracking-wider transition-colors duration-200 ${
                   isActive
                     ? "text-teal-300"

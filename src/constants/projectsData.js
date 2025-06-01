@@ -26,4 +26,13 @@ export const PROJECTS_DATA = [
     demoLink: "https://thebeautyspot.netlify.app/",
     techStack: ["React", "Tailwind CSS", "Netlify"],
   },
+  {
+    id: 4,
+    title: "Ellaija's Portfolio",
+    description:
+      "Created a modern and responsive personal portfolio for Ellaija using React and Tailwind CSS. The website highlights her skills, experiences, and contact information with a clean design—deployed on Vercel to ensure fast and reliable performance.",
+    image: "/projects/ellaija_portfolio.webp",
+    demoLink: "https://ellaija-portfolio.vercel.app/",
+    techStack: ["React", "Tailwind CSS", "Vercel"],
+  },
 ];

@@ -35,5 +35,17 @@ export const ARCHIVED_PROJECTS_DATA = [
       "https://netlify.app",
     ],
   },
+  {
+    id: 4,
+    title: "Ellaija's Portfolio Website",
+    demoLink: "https://ellaija-portfolio.vercel.app/",
+    year: 2025,
+    techStack: ["React", "Tailwind CSS", "Vercel"],
+    techLinks: [
+      "https://reactjs.org",
+      "https://tailwindcss.com",
+      "https://vercel.app",
+    ],
+  },
   // more projects...
 ];
