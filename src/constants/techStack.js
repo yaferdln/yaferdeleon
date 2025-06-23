@@ -4,8 +4,17 @@ import {
   FaCss3Alt,
   FaHtml5,
   FaGithub,
+  FaJsSquare,
 } from "react-icons/fa";
-import { SiTailwindcss, SiMysql, SiExpress, SiAxios } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiMysql,
+  SiExpress,
+  SiAxios,
+  SiNextdotjs,
+  SiPostgresql,
+} from "react-icons/si";
+
 export const techStack = [
   {
     id: 1,
@@ -69,5 +78,26 @@ export const techStack = [
     title: "GitHub",
     color: "text-gray dark:text-white",
     url: "https://github.com",
+  },
+  {
+    id: 10,
+    icon: SiNextdotjs,
+    title: "Next.js",
+    color: "text-black dark:text-white",
+    url: "https://nextjs.org",
+  },
+  {
+    id: 11,
+    icon: SiPostgresql,
+    title: "PostgreSQL",
+    color: "text-blue-700",
+    url: "https://www.postgresql.org",
+  },
+  {
+    id: 12,
+    icon: FaJsSquare,
+    title: "JavaScript",
+    color: "text-yellow-400",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
 ];
